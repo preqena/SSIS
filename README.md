@@ -13,3 +13,5 @@ Therefore:
 7. Edit the Script Component and add the code in *assign-same-values-async-cols.cs* in the main method
 8. This code will pass the same data of the input column to the output column, modify as needed if a cleaning process is for example needed
 9. This code takes into account that the types DT_NTEXT, DT_TEXT and DT_IMAGE are seen in C# as BlobColumn
+## Script Component HASHBYTES
+Given some input columns, get the HASH dynamically (without typing every column)
