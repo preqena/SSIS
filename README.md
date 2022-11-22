@@ -1,8 +1,15 @@
 # SSIS
+
 SSIS workarounds
+
 ## Script Component ASYNC columns
+
+>Idea: use the (BlobColumn) technique for the other kind of type in SSIS, build a case with this logic and voila
+
 Given a Source and a Target linked by a Script Component with Async columns enabled, "ease" the creation and maintenance of the Script Component whenever new columns are added.
+
 The idea behind is: if the columns of the source and the target end up being the same data type and with the same data (or cleansed), automate the creation of the package as much as possible (without using BIML).
+
 Therefore:
 1. Create your Source, Target and Script Component, link all of them
 2. Fill the input data to the Script Component
